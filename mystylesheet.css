@@ -1,0 +1,119 @@
+/*font-family: 'Lacquer', sans-serif;
+font-family: 'Dancing Script', cursive;*/
+:root{
+	font size: 16px;
+}
+body{
+  margin:0px;
+  padding: 0px;
+}
+.container{
+  display: flex;
+  background-color: black;
+  flex-direction: column;
+}
+.banner .card{
+  width: 100%;
+  flex-direction: column;
+  background-color: #AEC217;
+  border:1px solid black;
+  border-color: red;
+}
+.container .card .heading{
+  margin-top: 1vw;
+  font-size: 4rem;
+  font-family: 'Lacquer', sans-serif;
+  padding:3vw 1vw 2vw 1vw;
+  text-shadow: 0vw 2vw 2vw black;
+  text-align:center;
+  color: black;
+  -webkit-text-fill-color: tomato; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  word-wrap: normal;
+}
+.container .card .sub-heading{
+  font-size: 3rem;
+  flex-direction: column;
+  font-family: 'system-ui';
+  color: black;
+  text-shadow: -1px 0px 15px red, 
+                1px 1px 10px green, 
+                1px -1px 05px yellow, 
+               -1px -1px 0 black;
+  text-align: center;
+  text-decoration: underline;
+  word-wrap: initial;
+  text-overflow: ellipsis;
+}
+.paragraph button{
+   
+   align-items: center;
+   margin-top: 1.3vw;
+   background:none;
+   padding:1vw;
+   border:none;
+   font-size: 1.5rem;
+   font-style: oblique;
+   color:tomato;
+   letter-spacing: 2px;
+   border-radius: 50px;
+   transition: box-shadow 0.3s linear 0.2s;   
+ }
+ .paragraph button:hover{
+  cursor:pointer;
+  text-transform: uppercase;
+  box-shadow: 0px 0px 15px 8px yellow;
+  border-radius: 50px;
+ }
+ .row{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 1vh;
+  color:white;
+  font-style: oblique;
+  font-size: 1.6rem;
+  margin-bottom: 1vh;
+ }
+  .row .my-image {
+    border: 1px solid #35eea4;
+    border-radius: 5px;
+    box-shadow: 0px 3px 20px 2px #2c2c2c;
+    width: 25vw;
+    height: 40w;
+    margin: 1vw;
+ }
+ .row .paragraph{
+  font-size: 2.25rem;
+  font-style: oblique;
+  margin:1vw;
+  padding:2vw;
+  color: white;
+ }
+
+ @media only screen and (max-width: 725px) {
+    .row {
+        flex-direction: column;
+        font-size: 1rem;
+    }
+    .row .image {
+        order: -1;
+    }
+    .row .my-image {
+        width: 60vw;
+        margin-left: 20vw;
+    }
+    .row .paragraph{
+      font-size: 1rem;
+    }
+}
+
+.icon-group {
+    margin-top: 2vh;
+}
+
+.icon-group .icon {
+    margin-right: 10px;
+    width: 25px;
+} 
